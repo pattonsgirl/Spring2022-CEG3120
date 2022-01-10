@@ -23,7 +23,7 @@ approval email. For reference, mine took 2-3 minutes to arrive.
 _Registration form warnings_:
 
 - Make sure you set a graduation date IN THE FUTURE
-  - For Spring 2021, I recommend using 12/30/2026
+  - For Spring 2022, I recommend using 12/30/2026
 - The last field on the right is a Promotional Code field. Your autofill may mistake it for a  
   zip code and unhelpfully fill it out for you. Make sure the Promotional Code field is _blank_ (empty)
 
