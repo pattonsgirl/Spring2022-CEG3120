@@ -20,16 +20,20 @@ In your repo for this course, create a file named `git-guide.md`. In this file, 
 - pull
 - branch
 - checkout
+- ~~init~~
+- ~~remote~~
 
 ## git files & folders
 
 - .git folder
 - .gitignore file
+- ~~.git/hooks~~
 
 ## GitHub
 
 - Pull requests
 - SSH authentication to repositories
+- ~~Actions~~
 
 ## Resources
 
