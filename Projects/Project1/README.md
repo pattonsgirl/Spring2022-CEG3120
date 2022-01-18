@@ -74,6 +74,10 @@ For the changes, you'll be customizing the bot to output your set of messages wh
 
 2. In Pilot, paste the link to your project folder. Sample link: https://github.com/WSU-kduncan/ceg3120-YOURGITHUBUSERNAME/blob/main/Projects/Project1
 
+## Rubric
+
+[Link to Rubric](Rubric.md)
+
 ## Extra Info
 
 ### Create a Discord server
