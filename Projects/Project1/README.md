@@ -5,7 +5,7 @@
 - Protect files with secret information (in this case, an API key)
 - Deploy a project using basic tools (GitHub & git)
 - Build projects locally, then deploy them to your AWS instance
-- Explore long term solutions to serving content that don't involve leaving your machine on or connected to the terminal 24/7
+- Explore long term solutions to serving content that don't involve being connected to the terminal 24/7
 
 ## The Story
 
