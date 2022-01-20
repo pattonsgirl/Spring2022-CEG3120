@@ -1,4 +1,11 @@
-# Getting Started with AWS Academy
+# AWS Academy Instructions
+
+- [Getting Started with AWS Academy](#Getting-Started-with-AWS-Academy)
+- [Connecting to an AWS environment](#Connecting-to-an-AWS-environment)
+- [Reconnecting to an AWS environment](#Reconnecting-to-an-AWS-environment)
+- [Notes](#Notes)
+
+## Getting Started with AWS Academy
 
 1. Open email from AWS Academy to accept invite to course.
    - Email your course instructor if you did not recieve an email.
@@ -31,28 +38,45 @@
 **WARNING**
 While exploring and discovery is an important part of this course, any additional resources you create in AWS have an associated charge. If resources besides those strictly asked for by this course stay running, you risk running out of funds for this course. While fixable, this will hinder your ability to complete projects on time.
 
-## Connecting to the AWS environment
+## Connecting to an AWS environment
 
 **You are now ready to make an SSH connection to your AWS server.**
 
-- Open a terminal.
-- Copy the AWS SSH key that was downloaded to your system to your home directory in your terminal
-  - Helpful commands: `cp, ls, man`
-  - The manual method: Create a file with a useful name (or the same name as the downloaded file) `ceg3120-aws-vm.pem`
-  - Open a text editor (`vim` or `nano`)
-  - Copy and paste the contents of the key that was downloaded from AWS Educate into the file.
-- Change the permissions on the key file in your directory
-  - Because private keys need to be protected, the key needs to be changed to readable by your user by using `chmod`
-  - `chmod 600 /path/to/private/key` - replace _/path/to/private/key_ with your information
-  - Resource on how to use [chmod](https://www.howtogeek.com/437958/how-to-use-the-chmod-command-on-linux/)
-- SSH into your AWS server with the following command  
+1. Open a terminal.
+2. Copy the AWS SSH key that was downloaded to your system to your home directory in your terminal
+
+   - Helpful commands: `cp, ls, man`
+   - The manual method: Create a file with a useful name (or the same name as the downloaded file) `ceg3120-aws-vm.pem`
+   - Open a text editor (`vim` or `nano`)
+   - Copy and paste the contents of the key that was downloaded from AWS Educate into the file.
+
+3. Change the permissions on the key file in your directory
+
+   - Because private keys need to be protected, the key needs to be changed to readable by your user by using `chmod`
+   - `chmod 600 /path/to/private/key` - replace _/path/to/private/key_ with your information
+   - Resource on how to use [chmod](https://www.howtogeek.com/437958/how-to-use-the-chmod-command-on-linux/)
+
+4. SSH into your AWS server with the following command  
    `ssh -i /path/to/private/key ubuntu@ElasticIP`  
    Note: replace _/path/to/private/key_ and _ElasticIP_ with your information
-  - If your connection was refused, you may have forgotten to put the username `ubuntu` in front of your Elastic IP address
-- You are now signed in to your AWS Educate system as the user `ubuntu`
+   - If your connection was refused, you may have forgotten to put the username `ubuntu` in front of your Elastic IP address
+5. You are now signed in to your AWS Educate system as the user `ubuntu`
 
-# On-going Notes
+## Reconnecting to an AWS environment
 
-- Important notes:
-  - Sessions last 4 hours. Session time can be refreshed. Instances spin down after 4 hours
-  - Budget cannot exceed $100 - account will vaporize - all resources created by account will be deleted
+Every 4 hours, instances (virtual machines) on AWS will automatically power down. This is good - it saves funds and use of resources. However, every 4 hours you need to restart the timer OR **Start Lab** again.
+
+1. Log on to the [AWS Canvas portal](https://awsacademy.instructure.com/login/canvas)
+2. Within the course, click **Modules**
+3. Click **Learner Lab - Foundational Services**
+4. Click the **Start Lab** Play button on the middle right
+5. Wait. 2 - 3 minutes. You will see a console appear that you can interact with.
+6. Click **AWS** which should have a green dot next to it located on the left
+   - This will take you to your AWS Console for your account.
+   - The light next to **AWS** should now be **green**
+7. Be patient, but you should now be able to `ssh` in to your instance with your private key to the same IP as before
+
+## Notes
+
+- Sessions last 4 hours. Session time can be refreshed. Instances spin down after 4 hours
+- Budget cannot exceed $100 - account will vaporize - all resources created by account will be deleted
