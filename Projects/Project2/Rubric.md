@@ -1,6 +1,6 @@
-# Project 3 Rubric
+# Project 2 Rubric
 
- / 15
+/ 15
 
 ## Part 1
 
@@ -13,9 +13,9 @@
 ## Part 2
 
 1. Instance details
-    - AMI selected
-        - default username of the instance type selected
-    - Instance type selected
+   - AMI selected
+     - default username of the instance type selected
+   - Instance type selected
 2. How to attach instance to VPC
 3. Public IP address auto-assign - yay or nay and why?
 4. How to create and attach storage volume to instance
