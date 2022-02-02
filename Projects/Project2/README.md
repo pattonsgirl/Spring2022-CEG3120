@@ -7,6 +7,8 @@
 
 ## Assignment Notes / Hints
 
+For this project you need access to your AWS console. [Return to here and click "Start Lab"](https://awsacademy.instructure.com/courses/13269/modules/items/1137325). **Once the icon next to "AWS" is green, click "AWS" to open the console.**
+
 Create a `Project2` folder in your GitHub Classrooms repo. This project is mostly documentation of work, so you are welcome to work wherever you are comfortable. I would float towards VSCode myself.
 
 In your `Project2` folder, create a file named `README.md` Do you work for Parts 1 & 2 here.
