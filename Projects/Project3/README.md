@@ -6,6 +6,8 @@
 
 ## Assignment Notes / Hints
 
+For this project you need access to your AWS console. [Return to here and click "Start Lab"](https://awsacademy.instructure.com/courses/13269/modules/items/1137325). **Once the icon next to "AWS" is green, click "AWS" to open the console.**
+
 Create a `Project3` folder in your GitHub Classrooms repo. This project is mostly modying a CloudFormation template, so you are welcome to work wherever you are comfortable. I would float towards VSCode myself.
 
 You are welcome to include notes in a README.md file in your folder in your repo if you need to write notes for partial credit.
