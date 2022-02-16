@@ -6,7 +6,7 @@
 
 ## Assignment Notes / Hints
 
-Create a `Project4` folder in your GitHub Classrooms repo. This project is mostly modying a CloudFormation template, so you are welcome to work wherever you are comfortable. I would float towards VSCode myself.
+Create a `Project3` folder in your GitHub Classrooms repo. This project is mostly modying a CloudFormation template, so you are welcome to work wherever you are comfortable. I would float towards VSCode myself.
 
 You are welcome to include notes in a README.md file in your folder in your repo if you need to write notes for partial credit.
 
@@ -42,11 +42,11 @@ Your deliverable is a CloudFormation template. Make sure you include it in your 
      HVM64: ami-07d0cf3af28718ef8
      HVMG2: NOT_SUPPORTED
    ```
-3. Resources: requirements updated 10/22
+3. Resources:
 
-   - Adjust VPC range to be /16
-   - Adjust subnet range to be /24
-   - **Note: see [extra credit](#Extra-Credit)**
+   - VPC range to be /24
+   - Subnet range to be /28
+   - Tag each resource with a name - last name, cloudformation, resource: `Duncan-CF-VPC`
 
 4. Security Group Settings:
 
@@ -56,11 +56,11 @@ Your deliverable is a CloudFormation template. Make sure you include it in your 
      - Instances within the VPC
 
 5. Instance settings:
-   - Set "Tag" "Name" to "CF-instance"
+   - Set "Tag" "Name" to "LastName-CF-instance"
    - Set a private IP in your subnet range
    - Using the configuration script built into the cf-template
      - Change hostname
-     - Install git, python3, pip3
+     - Install `git`, `python3`, `pip3`
 
 - Use the "CloudFormation" in the AWS console to test your CloudFormation template.
 
@@ -84,13 +84,6 @@ A successful stack will (once created) have an instance you can ssh into.
 
    - Your repo should contain:
    - `YOURLASTNAME-cf.yml`
-   - `README.md` (optional)
+   - `README.md` (optional for notes)
 
-2. In Pilot, paste the link to your project folder. Sample link: https://github.com/WSU-kduncan/ceg3120-YOURGITHUBUSERNAME/blob/main/Projects/Project4
-
-## Extra Credit
-
-There is a sneaky configuration that makes the VPC setting of /24 and subnet setting of /28 not work when creating the instance IP.
-10% extra credit goes to templates that successfully use a VPC setting of /24 and subnet setting of /28. I'm happy to answer any related questions in class, but you must ask :)
-
-In your Pilot please note that you solved the extra credit.
+2. In Pilot, paste the link to your project folder. Sample link: https://github.com/WSU-kduncan/ceg3120-YOURGITHUBUSERNAME/blob/main/Projects/Project3
