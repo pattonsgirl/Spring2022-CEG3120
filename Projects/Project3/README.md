@@ -73,8 +73,8 @@ Your deliverable is a CloudFormation template. Make sure you include it in your 
 - Extra notes:
   - Anytime you see `!Ref`, there is a reference being made to a value defined elsewhere. These are fun to track down.
   - The configuration script uses some bash syntax.
-    - space / ` /` means the command continues on a new line. Very nice for readability
-    - && `&&` need to go inbetween commands. You will see space && / ` && /` in between commands - again, readability
+    - space \ ` \` means the command continues on a new line. Very nice for readability
+    - && `&&` need to go inbetween commands. You will see space && \ ` && \` in between commands - again, readability
 
 ## Identifying Success
 
