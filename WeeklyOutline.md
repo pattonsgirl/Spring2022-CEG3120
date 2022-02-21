@@ -1,141 +1,184 @@
 # Weekly Outline for CEG 3120
 
-## Week 1 & 2 (8/23 & 8/30)
+## Week 1 & 2
+
 - syllabus
-- create aws stack (maybe too soon, future note?)
+- create aws stack
 - terminal command reminder
 - users
 - permissions
 - ssh keys
-- git command basics
-    - clone
-    - init
-    - add
-    - commit
-    - push
-- Project 1 
-    - host git repo on AWS instance
-        - create user to see user@
-        - understand structure after :
-        - public key in authorized_keys
-    - clone to local system
-        - SSH private key exists locally
-        - investigate ~/.ssh/config
+  - private vs public
+  - .ssh/config
+  - .ssh/authorized_keys
+  - .ssh/known_hosts
+- git & GitHub
+  - clone
+  - init
+  - add
+  - rm (and rm --cached)
+  - commit
+  - push
+  - pull
+  - branch
+  - fetch / merge
+  - checkout
+  - merge conficts
+  - Pull Requests
+  - .gitignore
+  - markdown essentials
 
-## Week 3 (9/6)
-- Note: this was two days for Fall due to holiday
-- Project 1 review
-- git extras
-    - .gitignore
-    - pull
-    - merge conflicts
-    - branching
-    - Pull Requests
+### Project
 
-## Week 4 (9/13)
-- git stuff
-    - Pull Requests in action
-    - removing files from tracking
-    - GitHub handling secrets
+- git guide
+
+## Week 3
+
 - crash course python notes
+- package version dependencies and usage
 - APIs
-    - structure of a syncronous API
-    - Discord Bot and asyncronous APIs
-    - Requesting and using OAuth keys
-- understanding system environment variables
-    - PATH
-- exploring running processes attached to the terminal
-- Project 2
-    - build a Discord bot
-    - make a branch for changes to bot responses
-    - explore ways to detach from terminal
+  - REST APIs
+    - querying
+    - version dependent (how queries are requested can change)
+  - syncronous vs asyncronous APIs
+  - Requesting and using OAuth keys
+- authentication vs authorization
+  - OAuth - allow third party to do x y z
+  - JSON Web Tokens & session cookies
+    - keeping you logged in and maintaining session details
+- process exploration
+  - bot runs as long as starting terminal is open
+  - screen / background jobs (2350) - detaching processes
+  - cloud solutions?
+  - containers?
 
-- TODO: bump Project 2 to 24th?
+### Project
 
-## Week 5 (9/20? - 10/24)
-- Project 2 review
-- review of networking terminology
-    - needs improvement
+- Discord Bot using Discord API w/ discord.py
+- managing secrets for a project
+- using branches for changes
+
+## Week 4
+
+- linters and unit tests
+  - using hooks to trigger
+- networking review
+  - IPv4 addresses
+  - Subnets & CIDR notation
+  - routes
+  - gateways
+  - NAT
+  - Firewalls
+    - network wide (AWS Security Groups)
+    - per machine (iptables)
+
+## Week 5
+
+- the cloud
+  - types of cloud services
+  - regions
+  - access management of cloud resources
+    - token based can create(?) access(?) delete(?) view billing(?)
 - intro to navigating AWS
-    - EC2 instance types
-    - images / AMI
-    - networking (VPC, subnet, security group)
-    - firewalls
-- intro to contents of a CloudFormation Template
-- Project 3
-    - Manually creating the resources of a stack
-    - ~~Creating a CloudFormation template~~
-    - October 4th?
+  - EC2 instance types
+  - images / AMI
+  - networking (VPC, subnet, gateways, routes, security group)
 
-## Midterm week (10/11)
-- one class day this week
-- Midterm review 10/13
-- Midterm - Friday October 15th
+### Project
 
-## X (10/18)
-- Midterm review, reminder overview of CF templates
+- Manually creating the resources
+  - VPC
+  - instance type & AMI
+  - EIP to instance
+
+## Week 6
+
+- intro to contents of CloudFormation Template
+  - using YAML/JSON formatted files
+- system logs & service control
+- installing and configuring a webserver
+  - apache vs nginx
+  - status / control of services (systemctl)
+  - service logs (apache & ssh)
+  - security groups
+  - iptables? system level firewalls
+  - nmap -p 1-5000 server
+
+### Project
+
+- Create CloudFormation template
+  - should mimic what was manually created
+
+## Week 7
+
+- intro to proxies & HAProxy
+- Midterm review
+- Midterm
+
+## Week 8
+
+- Midterm review
 - messing with a webserver
-    - apache vs nginx
-    - status / control of services (systemctl)
-    - service logs (apache & ssh)
-    - HTTPS vs HTTP and notes on certificates
-    - security groups
-    - iptables? system level firewalls
-    - nmap -p 1-5000 server
+  - HTTPS vs HTTP and notes on certificates
 - load balancing and fault tolerance
-    - HAproxy configurations
-    - keeping backend servers private - when are public IPs needed?
-    - fault tolerance of non-responsive backends
+
+  - HAproxy configurations
+  - keeping backend servers private - when are public IPs needed?
+  - fault tolerance of non-responsive backends
 
 - monitoring
-    - Networked systems (Grafana?)
-    - cloud costs and usage
+  - Networked systems (Grafana?)
+  - cloud costs and usage
 
-## X (10/25)
+## Week 9
 
-## X (11/1)
+## Week 10
+
 - Directory service & relational database concepts and usage
-    - host db on a system?  the books API example?
+  - host db on a system? the books API example?
 
-## X (11/8)
+## Week 11
 
-## X (11/15)
+## Week 12
+
 - scalability
-    - containers
+  - containers
 
-## X (11/22)
+## Week 13
+
 - Note: one class day this week
 - continuous development and integration
-    - GitHub actions
-    - docker hub
-    - GitHub webhooks?
+  - GitHub actions
+  - docker hub
+  - GitHub webhooks?
 
-## X (11/29)
+## Week 14
 
-## Finals Week (12/6)
+## Finals Week
 
-Course Learning Objectives:
-1.	Understanding of what can be accomplished be using modern language features and software development practices to develop a distributed information technology system
-2.	Understanding of networking roles in a distributed information technology infrastructure
-3.	Use of and application of modern software development tools and methodologies and part of a team
-4.	Distributed architecture and fault tolerance concepts
-5.	Application programming interface design and usage
-6.	Directory and relational database concepts and integration
-7.	Introduction to cloud systems and modern deployment techniques
-8.	Introduction to continuous development and continuous integration
-Course Outline:
-1.	Using the command line interface & scripting
-2.	~~Networking (private vs public accessibility, sockets & ports, SSH keys)~~
-3.	Understanding logs, usage of configuration files, process control
-4.	~~Development tools (version management, team organization)~~
-5.	Cloud infrastructure & Infrastructure as a Service (IaaS)
-6.	~~Utilizing Application Programming Interfaces (APIs) & Service Oriented Architecture (SOA)~~
-7.	Directory service & relational database concepts and usage
-8.	Continuous integration & automating change management
-9.	Continuous deployment & automating production
-10.	Distributed architecture
-11.	Infrastructure as Code (IaC)
-12.	Fault tolerance & health monitoring
-13.	Introduction to scalability, cost, and maintenance considerations
+## Course Learning Objectives:
 
+1. Understanding of what can be accomplished be using modern language features and software development practices to develop a distributed information technology system
+2. Understanding of networking roles in a distributed information technology infrastructure
+3. Use of and application of modern software development tools and methodologies and part of a team
+4. Distributed architecture and fault tolerance concepts
+5. Application programming interface design and usage
+6. Directory and relational database concepts and integration
+7. Introduction to cloud systems and modern deployment techniques
+8. Introduction to continuous development and continuous integration
 
+## Course Outline:
+
+1. Using the command line interface & scripting
+2. Networking (private vs public accessibility, sockets & ports, SSH keys)
+3. Understanding logs, usage of configuration files, process control
+4. Development tools (version management, team organization)
+5. Cloud infrastructure & Infrastructure as a Service (IaaS)
+6. Utilizing Application Programming Interfaces (APIs) & Service Oriented Architecture (SOA)
+7. Directory service & relational database concepts and usage
+8. Continuous integration & automating change management
+9. Continuous deployment & automating production
+10. Distributed architecture
+11. Infrastructure as Code (IaC)
+12. Fault tolerance & health monitoring
+13. Introduction to scalability, cost, and maintenance considerations
