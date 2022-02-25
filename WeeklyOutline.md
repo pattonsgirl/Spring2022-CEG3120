@@ -130,6 +130,14 @@
   - Networked systems (Grafana?)
   - cloud costs and usage
 
+### Project
+
+- CF Template
+  - create three instances
+  - create one NAT gateway? Connect two instances to that?
+- Configure load balancer
+- Configure hosts to hold unique content
+
 ## Week 9
 
 ## Week 10
