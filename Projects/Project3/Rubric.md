@@ -5,7 +5,7 @@ Common notes:
 - Leaving this in with the default location of 0.0.0.0/0 for SSHLocation = SSH from anywhere
 
 ```
-- IpProtocol: tcp
+        - IpProtocol: tcp
           FromPort: '22'
           ToPort: '22'
           CidrIp: !Ref SSHLocation

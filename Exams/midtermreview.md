@@ -2,6 +2,12 @@
 
 ## Spring 2022
 
+Why protect OAuth tokens?
+
+OAuth tokens handle authorization, not authentication. You can authorize a third party do actions within a scope by giving the third party a token based access. For example, the Discord bot used an authorization token. It was authorized with administrative access, but we discussed that we could have limited it to message reading or writing, allowing or disallowing adding users to a server, and so on.
+
+If an OAuth token is exposed (such as publicly displayed on GitHub), any third party service can do any action within the scope of that token.
+
 ## Da Rules
 
 Midterm: Friday, 2/25
