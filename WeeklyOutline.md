@@ -115,17 +115,17 @@
 - Midterm review
 - Midterm
 
-## Week 8
+## Week 8 & 9
 
 - Midterm review
+- NAT Gateways
+  - one EIP, external communication allowed
 - messing with a webserver
   - HTTPS vs HTTP and notes on certificates
 - load balancing and fault tolerance
-
   - HAproxy configurations
   - keeping backend servers private - when are public IPs needed?
   - fault tolerance of non-responsive backends
-
 - monitoring
   - Networked systems (Grafana?)
   - cloud costs and usage
@@ -138,31 +138,31 @@
 - Configure load balancer
 - Configure hosts to hold unique content
 
-## Week 9
-
 ## Week 10
 
-- Directory service & relational database concepts and usage
-  - host db on a system? the books API example?
+- containers (Docker)
+  - purpose & constraints
+  - images
+  - Dockerfiles (recipes)
+  - deploying containers
 
 ## Week 11
 
 ## Week 12
 
-- scalability
-  - containers
-
-## Week 13
-
-- Note: one class day this week
 - continuous development and integration
   - GitHub actions
   - docker hub
   - GitHub webhooks?
 
+## Week 13
+
 ## Week 14
 
-## Finals Week
+## Topics the need a home:
+
+- Directory service & relational database concepts and usage
+  - host db on a system? the books API example?
 
 ## Course Learning Objectives:
 
