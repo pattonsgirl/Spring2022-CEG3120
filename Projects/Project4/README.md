@@ -17,7 +17,7 @@
 
 ## Project Description
 
-In your repository, create a `Project5` folder.
+In your repository, create a `Project4` folder.
 
 For this project, you will be creating resources to use for a load balancing setup. This project will  
 keep things simple - you will have one server accessible from the world. You will have two more servers  
