@@ -147,7 +147,7 @@ Resources:
           Value: P4-sg
   ProxyInstance:
     Type: 'AWS::EC2::Instance'
-    DependsOn: AttachGateway
+    DependsOn: NATGateway
     Properties:
       ImageId: !FindInMap 
         - AWSRegionUbuntu
@@ -182,7 +182,7 @@ Resources:
             reboot
   WebServ1Instance:
     Type: 'AWS::EC2::Instance'
-    DependsOn: AttachGateway
+    DependsOn: NATGateway
     Properties:
       ImageId: !FindInMap 
         - AWSRegionUbuntu
