@@ -1,4 +1,4 @@
-# Project 6
+# Project 5
 
 - [Objectives](#Objectives)
 - [Project Overview](#Project-Overview)
@@ -17,9 +17,9 @@
 
 ## Project Overview
 
-For this project you will be creating a fresh repository - the link is in Pilot under Content - Projects - Project 6. This is the repo you will be using for this project.
+For this project you will be creating a fresh repository - the link is in Pilot under Content - Projects - Project 5. This is the repo you will be using for this project.
 
-You will notice that each part has "Milestone" labels and dates. This project is not due until 12/8. Completion of each milestone **by the date specificied for the milestone** will get you 1 pt of extra credit per milestone date met. To qualify, you must submit your project to the Dropbox for Project 6 in Pilot.
+You will notice that each part has "Milestone" labels and dates. This project is not due until 4/22. Completion of each milestone **by the date specificied for the milestone** will get you 1 pt of extra credit per milestone date met. To qualify, you must submit your project to the Dropbox for Project 5 in Pilot.
 
 ## Part 1 - Dockerize it
 
@@ -49,7 +49,7 @@ You will notice that each part has "Milestone" labels and dates. This project is
 
 ## Part 2 - GitHub Actions and DockerHub
 
-- **Milestone Participation due 3/8**
+- **Milestone Participation due 4/8**
 
 ### Tasks
 
@@ -78,7 +78,7 @@ You will notice that each part has "Milestone" labels and dates. This project is
 
 ## Part 3 - Deployment
 
-- **Milestone Participation due 3/20**
+- **Milestone Participation due 4/20**
 
 ### Tasks
 

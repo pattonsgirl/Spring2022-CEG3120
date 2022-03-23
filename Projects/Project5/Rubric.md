@@ -1,6 +1,6 @@
-# Project 6 Rubric
+# Project 5 Rubric
 
-/ 15
+/ 17
 
 ## Repo contents ( / 4)
 
@@ -29,7 +29,6 @@
 - Configure GitHub Workflow
   - variables to change (repository, etc.)
 
-## Deployment ( / 2)
+## Deployment ( / 4)
 
-- Pulling the image
-- Running the container
+- Create and set up a webhook

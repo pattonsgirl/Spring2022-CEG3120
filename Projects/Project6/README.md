@@ -1,3 +1,5 @@
+## PROJECT 6 - Placeholder
+
 ## Automate Deployment
 
 Here's the deal. DockerHub and GitHub and many other things offer these things called "webhooks". Think very basic triggers that can notify when actions happen (actions in the lowercase sense, GitHub Actions are their own thing). The goal is to automate deploying updates. I am including some resources that may (or may not) be good directions to check out. I will accept either of the following strategies:
