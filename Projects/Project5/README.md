@@ -27,11 +27,11 @@ You will notice that each part has "Milestone" labels and dates. This project is
 
 ### Tasks
 
-- Create new GitHub repo (link to create located in Pilot in Content -> Project 6)
+- Create new GitHub repo (link to create located in Pilot in Content -> Project 5)
 - In a folder named `website`, add the contents of your website
   - this can be a site you created in another class, pet project of yours, or just a vanilla html file
 - Install Docker
-  - You can install Docker in WSL2 or in an EC2 instance. You'll need your Project 6 repo on wherever you are working
+  - You can install Docker in WSL2 or in an EC2 instance. You'll need your Project 5 repo on wherever you are working
 - Create a container image that will run a webserver and contains your "website"
   - you can use apache2 or nginx as the webserver
 - Create a Dockerfile with instructions on how to build the image
