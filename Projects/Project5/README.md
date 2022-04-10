@@ -5,6 +5,7 @@
 - [Part 1 - Dockerize it](#Part-1---Dockerize-it)
 - [Part 2 - GitHub Actions and DockerHub](#Part-2---GitHub-Actions-and-DockerHub)
 - [Part 3 - Deployment](#Part-3---Deployment)
+- [Part 4 - Diagramming](#Part-4---Diagramming)
 - [Submission](#Submission)
 - [Extra Credit - DIY](#Extra-Credit---DIY)
 - [Rubric](Rubric.md)
@@ -19,7 +20,7 @@
 
 For this project you will be creating a fresh repository - the link is in Pilot under Content - Projects - Project 5. This is the repo you will be using for this project.
 
-You will notice that each part has "Milestone" labels and dates. This project is not due until 4/22. Completion of each milestone **by the date specificied for the milestone** will get you 1 pt of extra credit per milestone date met. To qualify, you must submit your project to the Dropbox for Project 5 in Pilot.
+You will notice that each part has "Milestone" labels and dates. This project is not due until 4/22. Completion of each milestone **by the date specificied for the milestone** will get you 10% of extra credit per milestone date met. To qualify, you must submit your project to the Dropbox for Project 5 in Pilot.
 
 ## Part 1 - Dockerize it
 
@@ -65,11 +66,13 @@ You will notice that each part has "Milestone" labels and dates. This project is
 
 - Create DockerHub public repo
   - process to create
-- Allow DockerHub authentication via CLI using Dockhub credentials
-- Configure GitHub Secrets
-  - what credentials are needed - DockerHub credentials (do not state your credentials)
+- How to authenticate with DockerHub via CLI using Dockhub credentials
+  - what credentials would you recommend providing?
+- Configuring GitHub Secrets
+  - what credentials are needed
   - set secrets and secret names
-- Configure GitHub Workflow
+- Behavior of GitHub workflow
+  - what does it do and when
   - variables to change (repository, etc.)
 
 ### Resources
@@ -89,12 +92,36 @@ You will notice that each part has "Milestone" labels and dates. This project is
 ### Documentation
 
 - Update `README.md` in main folder of your repo to include:
-- Creating a webhook
+
+- Container restart script
+  - what it does
+- Webhook task definition file
+  - what it does
+- Setting up a webhook on the server
+  - How you created you own listener
+  - How you installed and are running the [webhook on GitHub](https://github.com/adnanh/webhook)
+- Setting up a notifier in GitHub or DockerHub
 
 ### Resources
 
-- [using github actions and webhooks](https://levelup.gitconnected.com/automated-deployment-using-docker-github-actions-and-webhooks-54018fc12e32)
-- [Link needed - webhooks with DockerHub]
+Note: the challenging part here is getting the webhook reciever running and happy on the server. You can lean on lectures and notes left in the PowerPoint slides, but make sure you add your own notes to your documentation
+
+- [Using GitHub actions and webhooks](https://levelup.gitconnected.com/automated-deployment-using-docker-github-actions-and-webhooks-54018fc12e32)
+- [Using DockerHub and webhooks](https://blog.devgenius.io/build-your-first-ci-cd-pipeline-using-docker-github-actions-and-webhooks-while-creating-your-own-da783110e151)
+  - Note: this has been the method focused on in lecture
+
+## Part 4 - Diagramming
+
+Include a diagram (or diagrams) of your entire workflow. Meaning it should start with a project change / update, the steps that happen in between, and end with the updated version when the server is queried (web page is accessed)
+
+### Resources
+
+You can use whatever tools you would like, here are some recommend tools that people use
+
+- [Lucid Charts](https://www.lucidchart.com/pages/)
+- [Textographo](https://textografo.com/)
+- [Mermaid - new markdown feature](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)
+- PowerPoint and OneNote are still good choices
 
 ## Submission
 
@@ -106,6 +133,9 @@ You will notice that each part has "Milestone" labels and dates. This project is
    - `website` folder with website pages
    - `Dockerfile`
    - GitHub action yml file
+   - webhook related config files
+     - container restart script
+     - webhook definition file
 
 2. In Pilot, paste the link to your project folder.
 

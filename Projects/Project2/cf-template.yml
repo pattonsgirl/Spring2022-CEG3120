@@ -95,10 +95,6 @@ Resources:
           FromPort: '-1'
           ToPort: '-1'
           CidrIp: 10.0.0.0/24
-        - IpProtocol: tcp
-          FromPort: '1'
-          ToPort: '65535'
-          CidrIp: 0.0.0.0/0
   PublicUbuntuInstance:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
@@ -143,14 +139,3 @@ Resources:
               python-dev \
               python3-dev && \
             reboot
-      BlockDeviceMappings:
-          - DeviceName: /dev/sda1
-            Ebs:
-              VolumeType: 'gp2'
-              VolumeSize: '16'
-              Encrypted: 'false'
-          - DeviceName: /dev/sdb
-            Ebs:
-              VolumeType: 'gp2'
-              VolumeSize: '4'
-              Encrypted: 'false'
