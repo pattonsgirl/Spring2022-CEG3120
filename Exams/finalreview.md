@@ -152,10 +152,10 @@ Midterm: Monday, 2/25
 ### Project
 
 - CF Template
-  - create three instances
-  - create one NAT gateway? Connect two instances to that?
+  - create one instance with public IP
+  - create one NAT gateway Connect two instances to that?
 - Configure load balancer
-- Configure hosts to hold unique content
+- Configure hosts in backend pool to hold unique content
 
 ## Week 9 & 10
 
@@ -180,12 +180,41 @@ Midterm: Monday, 2/25
 ## Week 11
 
 - Continuous integration using GitHub Actions
+- Terminology in GitHub Actions:
+  - workflow (and where it goes)
+  - events
+  - runners
+  - jobs
+    - steps
+  - actions
+    - `uses`, `with`
+- Semantic versioning
+  - git tags
+  - rules of tagging
 
-## Week 12
+## Week 12 & 13
 
-## Week 13
+- Continuous deployment
+- scripting container stop, pull, and run new
+- setting up a listener on server (GitHub adnanh/webhook)
+  - content of a hook configuration file
+  - URL for payload delivery
+- events that should trigger a container refresh
+  - DockerHub webhook
+  - GitHub webhook + using a secret
+  - GitHub Action job to run webhook
 
 ## Week 14
 
 - secret sharing and containers
   - Have secret on individual host, share with container on run using a bind mount (-v HOST:CONTAINER)
+
+### Project
+
+- create container
+  - debate base images, run project as active container process
+- set up DockerHub repo for push and pull of images
+- create GitHub action and define events to trigger workflow
+  - use workflow to create new container if changes are made (based on event definition) to repository
+  - use workflow to push updated container images to DockerHub
+- utilize webhooks to refresh running container based on event
