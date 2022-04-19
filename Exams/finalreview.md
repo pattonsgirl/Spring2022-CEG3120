@@ -118,3 +118,74 @@ Midterm: Monday, 2/25
 
 - Create CloudFormation template
   - should mimic what was manually created
+
+## Week 7
+
+- proxies (forward & reverse)
+- load balancing terminology
+  - hosts
+  - pools
+  - config file settings
+    - global / defaults/ frontend / backend
+  - layer 4 (tcp) load balancing
+  - layer 7 (http) load balancing
+  - Allocation strategies
+    - Round robin
+    - Weight round robin
+    - Least connections
+    - Least response time
+
+## Week 8
+
+- NAT Gateways
+  - one EIP, external communication allowed
+- messing with a webserver
+  - HTTPS vs HTTP and notes on certificates
+- load balancing and fault tolerance
+  - HAproxy configurations
+  - keeping backend servers private - when are public IPs needed?
+  - fault tolerance of non-responsive backends
+- monitoring
+  - Networked systems (Grafana?)
+  - cloud costs and usage
+
+### Project
+
+- CF Template
+  - create three instances
+  - create one NAT gateway? Connect two instances to that?
+- Configure load balancer
+- Configure hosts to hold unique content
+
+## Week 9 & 10
+
+- containers using Docker
+  - purpose & constraints
+  - images & image selection
+    - `docker pull ___`
+    - `docker images`
+    - `docker image rm ___`
+  - Running containers
+    - `docker run` + options (`--name`, `--rm`, `-v`, `-p`, `-d`, `-it`)
+    - `docker ps` + `-a`
+    - `docker kill ___` (or) `docker stop ___`
+    - `docker rm ___` (and why...)
+  - Dockerfiles (recipes)
+    - `docker build` + `-t`
+    - `FROM`, `WORKDIR`, `RUN`, `COPY`, `CMD`
+  - using container registry (DockerHub)
+    - `docker push ___`
+    - tagging considerations
+
+## Week 11
+
+- Continuous integration using GitHub Actions
+
+## Week 12
+
+## Week 13
+
+## Week 14
+
+- secret sharing and containers
+  - Have secret on individual host, share with container on run using a bind mount (-v HOST:CONTAINER)
